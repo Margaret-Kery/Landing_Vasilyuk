@@ -919,7 +919,9 @@
     top: 44.65%;
     bottom: 32.09%;
 }
-.social-twitter {
+.social-tg {
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 411px;
     top: 44.65%;
