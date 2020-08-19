@@ -663,23 +663,41 @@
     position: absolute;
     width: 462px;
     height: 452px;
-    border-left: 237px;
+    left: 0px;
     top: 145px;
     background: rgb(255, 255, 255); /* Цвет фона */
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); 
+    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
+}
+.mosaic_14 {
+    position: absolute;
+    width: 462px;
+    height: 452px;
+    left: 492px;
+    top: 145px;
+    background: rgb(255, 255, 255); /* Цвет фона */
+    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
+}
+.mosaic_15 {
+    position: absolute;
+    width: 462px;
+    height: 452px;
+    left: 984px;
+    top: 145px;
+    background: rgb(255, 255, 255); /* Цвет фона */
+    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
 }
 .list-text-3{
     position: absolute;
-width: 90px;
-height: 27px;
-left: 352px;
-top: 100px;
+    width: 90px;
+    height: 27px;
+    left: 352px;
+    top: 100px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 200;
-font-size: 18px;
-letter-spacing: 0.02em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.02em;
 
 }
 .reviews {
@@ -704,4 +722,206 @@ letter-spacing: 0.02em;
     height: 450px;
     left: 490px;
     top: 130px;
+}
+.stars-1 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 21px;
+    top: 102px;
+}
+.stars-2 {    
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 21px;
+    top: 102px;
+}
+.stars-3 {    
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 21px;
+    top: 102px;
+}
+.slider {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 680px;
+    top: 652px;
+}
+.arrow-2 {
+    position: absolute;
+    width: 84px;
+    left: 0px;
+    top: 652px;
+}
+.arrow-1 {    
+    position: absolute;
+    width: 84px;
+    left: 1360px;
+    top: 652px;
+}
+.list-description-1 {
+    position: absolute;
+    width: 410px;
+    height: 90px;
+    left: 26px;
+    top: 152px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 150%;
+    /* or 45px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+    }
+.footer {
+    position: absolute;
+    width: 1920px;
+    height: 215px;
+    left: 0px;
+    top: 6671px;
+}
+.nav-1 {
+    position: absolute;
+    left: 12.34%;
+    right: 78.12%;
+    top: 10.7%;
+    bottom: 23.26%;
+}
+.nav-2 {
+    position: absolute;
+    left: 37.97%;
+    right: 51.93%;
+    top: 9.77%;
+    bottom: 24.19%;
+}
+.phone {
+    position: absolute;
+    width: 160px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.email {
+    position: absolute;
+    width: 183px;
+    height: 32px;
+    left: 0px;
+    top: 52px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;     
+    color: #000000;
+}
+.map {    
+    position: absolute;
+    width: 133px;
+    height: 32px;
+    left: 0px;
+    top: 104px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.wedd {
+    position: absolute;
+    width: 161px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.school {
+    position: absolute;
+    width: 194px;
+    height: 32px;
+    left: 0px;
+    top: 52px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.studio {
+    position: absolute;
+    width: 141px;
+    height: 32px;
+    left: 0px;
+    top: 104px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.social-descripion-container {
+    position: absolute;
+    width: 357px;
+    height: 32px;
+    left: 1221px;
+    top: 23px;
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.social-icons {
+    position: absolute;
+    width: 600px;
+    left: 1221px;
+    top: 96px;
+    bottom: 66px;
+}
+.social-instagram {
+    position: absolute;
+    left: 0px;
+    top: 44.65%;
+    bottom: 32.09%;
+}
+.social-facebook {
+    position: absolute;
+    left: 137px;
+    top: 46.05%;
+    bottom: 30.7%;
+}
+.social-whatsapp {
+    position: absolute;
+    left: 274px;
+    top: 44.65%;
+    bottom: 32.09%;
+}
+.social-twitter {
+    position: absolute;
+    left: 411px;
+    top: 44.65%;
+    bottom: 32.09%;
 }
