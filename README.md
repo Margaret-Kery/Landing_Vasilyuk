@@ -1,5 +1,8 @@
 # Landing_Vasilyuk
 
-**Website link** https://margaret-kery.github.io/Landing_Vasilyuk_Margo/
+**Website link** 
+1. https://margaret-kery.github.io/Landing_Vasilyuk_Margo/ 
+
+2. https://dgryanko.github.io/Landing_Vasilyuk/
 
 Website is under construction
