@@ -195,14 +195,15 @@
     line-height: 140%;
 }
 .button-1 {
+    text-decoration: none;
     outline: none;
-    display: flex;
+    display: block;
     flex-direction: row;
     padding: 15px 40px;
 
     position: absolute;
-    width: 300px;
-    height: 66px;
+    width: 220px;
+    height: 36px;
     left: 239px;
     top: 609px;
 
@@ -215,6 +216,7 @@
     font-weight: 500;
     font-size: 27px;
     line-height: 100%;
+    color: #000000;
 }
 .button-2 {
     outline: none;
@@ -223,8 +225,8 @@
     padding: 15px 40px;
     
     position: absolute;
-    width: 300px;
-    height: 66px;
+    width: 220px;
+    height: 36px;
     left: 807px;
     top: 5683px;
     
@@ -237,6 +239,7 @@
     font-weight: 500;
     font-size: 27px;
     line-height: 100%;
+    color: #000000;
 }
 .nikon {
     position: absolute;
