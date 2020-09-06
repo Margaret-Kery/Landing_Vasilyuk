@@ -215,11 +215,17 @@
             </figure>    
             <div id="popup1" class="overlay">
                 <div class="popup">
-                    <h2>Поп ап</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
-                       Надо сюдда втулить форму
-                    </div>
+                    <form action="/php/telegram.php" method="POST">
+                        <legend>Зворотній зв'язок</legend>
+                        <a class="close" href="#">&times;</a>
+                        <class class="content">
+                            <label for="">Ім'я</label>
+                            <input type="text" class="form-control" id="" name="user_name">
+                            <label>Телефон</label>
+                            <input type="number" class="form-control" id="" name="user_phone">
+                            <button type="submit" class="btn btn-primary">Замовити зйомку</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>    
