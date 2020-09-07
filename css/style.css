@@ -987,6 +987,7 @@ ________
     width: 100px; /* Ширина */
     text-align: right; /* Выравниваем по правому краю */
     float: left; /* Выстраиваем элементы рядом */
+    margin-left: 50px;
     margin-right: 10px; /* Расстояние от текста до текстового поля */
     line-height: 30px; /* Выравниваем по высоте */
 
@@ -997,7 +998,7 @@ ________
     line-height: 150%;
    }
   #tel, #username {
-    width: 600px;
+    width: 500px;
     padding: 10px;
     box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
     border: 1px solid #ccc;
