@@ -216,13 +216,17 @@
             <div id="popup1" class="overlay">
                 <div class="popup">
                     <form action="/php/telegram.php" method="POST">
-                        <legend>Зворотній зв'язок</legend>
+                        <legend class="popname">Зворотній зв'язок</legend>
                         <a class="close" href="#">&times;</a>
                         <class class="content">
-                            <label for="">Ім'я</label>
-                            <input type="text" class="form-control" id="" name="user_name">
-                            <label>Телефон</label>
-                            <input type="number" class="form-control" id="" name="user_phone">
+                            <div class="inpopname">
+                                <p><label for="username" >Ім'я</label>
+                                <input type="text" id="username" name="user_name" ></p>
+                            </div>
+                            <div class="inpopphone">
+                                <p><label for="tel">Телефон</label>
+                                <input type="tel" id="tel" name="user_phone"></p>
+                            </div>
                             <button type="submit" class="btn btn-primary">Замовити зйомку</button>
                         </div>
                     </form>
