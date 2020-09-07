@@ -219,6 +219,7 @@
     color: #000000;
 }
 .button-2 {
+    text-decoration: none;
     outline: none;
     display: flex;
     flex-direction: row;
