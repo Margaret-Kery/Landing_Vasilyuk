@@ -959,8 +959,7 @@ ________
   }
   .popname {
     position: absolute;
-    left: auto;
-    right: 20%;
+    margin-left: 165px;
     top: 5%;
     bottom: 0%;
     
