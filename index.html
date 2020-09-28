@@ -215,24 +215,20 @@
             </figure>    
             <div id="popup1" class="overlay">
                 <div class="popup">
-                    <form action="/php/telegram.php" method="POST">
-                        <legend class="popname">Зворотній зв'язок</legend>
+                    <form action="/resend" method="POST">
+                        <legend>Зворотній зв'язок</legend>
                         <a class="close" href="#">&times;</a>
                         <class class="content">
-                            <div class="inpopname">
-                                <p><label for="username" >Ім'я</label>
-                                <input type="text" id="username" name="name" placeholder="Як до Вас звертатися?" ></p>
-                            </div>
-                            <div class="inpopphone">
-                                <p><label for="tel">Телефон</label>
-                                <input type="tel" id="tel" name="phone" placeholder="Введіть номер"></p>
-                            </div>
-                            <button type="submit" class="btn">Замовити зйомку</button>
-                        </div>
+                            <label for="">Ім'я</label>
+                            <input type="text" class="form-control" id="" name="user_name">
+                            <label>Телефон</label>
+                            <input type="number" class="form-control" id="" name="user_phone">
+                            <button type="submit" class="btn btn-primary">Замовити зйомку</button>
+                        </class>
                     </form>
                 </div>
             </div>
-        </main>            
+        </main>    
     <footer class="footer">
         <nav class="nav-1">
             <a href="#" class="phone">+38 (050) 850 58 88</a>
