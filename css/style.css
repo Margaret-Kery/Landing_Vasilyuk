@@ -1,6 +1,12 @@
 *{
     margin: 0 auto;
 }
+li {
+    list-style-type: none;
+}
+button {
+    border: 0;
+}
 .body{
     color: white;
     margin: 0;
@@ -916,8 +922,9 @@
     bottom: 32.09%;
 }
 ________
+
  
-  .box {
+.box {
     width: 40%;
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
@@ -996,7 +1003,13 @@ ________
     font-weight: 200;
     font-size: 18px;
     line-height: 150%;
+
+    margin-top: 10px;
    }
+   button::-moz-focus-outer, ::-moz-focus-inner 
+{
+  border: 0;
+}
   #tel, #username {
     width: 500px;
     padding: 15px;
@@ -1069,3 +1082,6 @@ ________
       width: 70%;
     }
   }
+  a {
+    outline: none; /* Убираем границу вокруг ссылок  */
+   }
