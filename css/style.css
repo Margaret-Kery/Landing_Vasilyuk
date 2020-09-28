@@ -1,8 +1,6 @@
 *{
     margin: 0 auto;
-}
-li {
-    list-style-type: none;
+    text-decoration: none;    
 }
 button {
     border: 0;
@@ -254,8 +252,6 @@ button {
     height: 450px;
     left: 235px;
     top: 1111px;
-
-    background: url(2.jpg)
 }
 .nikon-description-1 {    
     position: absolute;
@@ -345,13 +341,110 @@ button {
     left: 0px;
     top: 0px; 
 }
+__________________
+.list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.flexbox {
+    display: flex;
+}
+.wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+/* Правый марджин для сетки многострочного контейнера, исключаем каждый третий */
+.portfolio-card:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+/* Нижний марджин для сетки многострочного контейнера, исключаем три нижних */
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+
+/* Рассчет ширины карточки в портфолио */
+.portfolio-card {
+    width: calc((100% - 2 * 30px) / 3);   
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+}
+/* Заголовки под карточками в портфолио */
+.portfolio-card-title > .title {
+    margin-bottom: 4px;
+
+    color: var(--text-header);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+/* Текст под карточками портфолио */
+.portfolio-card-title > .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 23px;
+
+    letter-spacing: 0.02em;
+    
+    color: #000000;
+}
+/* Заголовки под карточками в портфолио */
+.portfolio-card-title > .title {
+  
+    height: 42px;
+    margin: 0;
+    padding-top: 19px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+
+
+    text-align: center;
+
+    color: #000000;
+  }
+.minmargin {
+    margin-bottom: -4px;
+}
+/* Общее - без марджинов */
+.nomargin,
+.title {
+  margin: 0px;
+}
+/* Бордер с трех сторон контейнера с текстом под имиджем карточек портфолио */
+.portfolio-link {
+    display: inline-block;
+    width: 462px;
+    border-right: 1px solid #EBE6E6;
+    border-bottom: 1px solid #EBE6E6;
+    border-left: 1px solid #EBE6E6;
+}
+.portfolio-link:hover {
+    box-shadow: 5px 5px 18px rgba(0,0,0,0.2); /* Параметры тени */
+}
+__________________
 .mosaic_1 {
     position: absolute;
     width: 462px;
     height: 618px;
     left: 0;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */ 
+    border: 1px solid #EBE6E6;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Параметры тени */ 
 }
 .mosaic_2 {
     position: absolute;
@@ -359,7 +452,7 @@ button {
     height: 618px;
     margin-left: 495px;
     background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */ 
+    box-shadow: 5px 5px 18px rgba(0,0,0,0.2); /* Параметры тени */ 
 }
 .mosaic_3 {
     position: absolute;
@@ -390,7 +483,7 @@ button {
 }
 .mosaic_6{
     position: absolute;
-    width: 463px;
+    width: 462px;
     height: 617px;
     left: 988px;
     top: 775px;
