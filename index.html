@@ -8,29 +8,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
     </head>
-    <body>
+    <body class="smooth-scroll">
         <header class="header">
             <img src="img/лого.svg" alt="logo Vasilyuk" class="logo"> 
             <nav class="main-nav"> 
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="about-me">Про мене </a>
+                        <a href="#about" class="about-me">Про мене </a>
                     </li>            
                     <li class="item">
-                        <a href="#" class="photographer-service">Послуги фотографа </a>
+                        <a href="#service" class="photographer-service">Послуги фотографа </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="contact">Контакти </a>
+                        <a href="#popup1" class="contact">Контакти </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="profit">Переваги </a>
+                        <a href="#advantages" class="profit">Переваги </a>
                     </li>
                     <li class="item">
-                        <a href="#"class="Procedure"> Порядок роботи </a>
+                        <a href="#operating-procedure"class="Procedure"> Порядок роботи </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="review">Відгуки </a>
+                        <a href="#reviews" class="review">Відгуки </a>
                     </li>
                     <li class="item">
                         <a class="contact-link" href="tel:+380508505888">+38 (050) 850 58 88</a>
@@ -48,11 +50,11 @@
             </figure>
             <figure>  
                 <img src="./img/2_1.png" alt="about me" class="nikon">
-                <figcaption class="nikon-description-1">Про мене</figcaption>
+                <figcaption id="about" class="nikon-description-1">Про мене</figcaption>
                 <figcaption class="nikon-description-2">Я завжди прагну відобразити натуральність образу — емоційність і щирість. Продумана композиція, підготовлений образ, і непідробні емоції — забезпечують можливість створити дійсно зачаровуючу фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.</figcaption> 
             </figure> 
             <figure class="frame-1">
-                <p class="service">Послуги фотографа</p>
+                <p id="service" class="service">Послуги фотографа</p>
                 <!-- Портфолио -->
                 <ul class="list flexbox wrap">
                     <li class="portfolio-card flexbox">
@@ -239,7 +241,7 @@
 
             </figure>
             <figure class="frame-2">
-                <p class="advantages">Переваги</p>
+                <p id="advantages" class="advantages">Переваги</p>
                 <section class="sked-1">
                     <img src="./img/graphic 1.svg" class="icon-adv">
                     <p class="description-advantages">4 роки досвіду</p>
@@ -266,7 +268,7 @@
                 </section>
             </figure>
             <figure class="frame-3">
-                <p class="operating-procedure">Порядок роботи</p>
+                <p id="operating-procedure" class="operating-procedure">Порядок роботи</p>
                 <section class="list-1">
                     <img src="./img/Arrow 1.svg" class="arrow">
                     <p class="list-text">Знайомство</p>
@@ -311,9 +313,9 @@
                     <img src="./img/girl-2169467_1920 2.svg" class="photo">
                 </section>
             </figure>
-            <a class="button-2" href="#popup1">Замовити зйомку</a>
+            <a class="button-2" href="#popup1" >Замовити зйомку</a>
             <figure class="frame-4">
-                <p class="reviews">Відгуки</p>
+                <p id="reviews" class="reviews">Відгуки</p>
                 <section class="mosaic_13">
                     <img src="./img/stars1.svg" class="stars-1">
                     <p class="list-text-2">Олена</p>
@@ -355,36 +357,36 @@
                     </form>
                 </div>
             </div>
-        </main>    
-    <footer class="footer">
-        <nav class="nav-1">
-            <a href="#" class="phone">+38 (050) 850 58 88</a>
-            <a href="#" class="email">photik.info@gmail.com</a>
-            <a href="#" class="map">Україна, м. Київ</a>
-        </nav>              
-        <nav class="nav-2">
-            <a href="#" class="wedd">Весільна фотосесія</a>
-            <a href="#" class="school">Фотозйомка випускних</a>
-            <a href="#" class="studio">Фотосесії в студії</a>
-        </nav>                
-        <div class="social-descripion-container">
-            <p class="social-description">Мене можна знайти в соціальних мережах</p>
-        </div>
-        <nav class="social-icons">            
-            <figure class="social-instagram">
-                <a href="https://www.instagram.com/olexgood/?hl=ru"><img src="./img/инстаграм.svg"></a>
-            </figure>
-            <figure class="social-facebook">
-                <a href="https://www.facebook.com/Olex1405"><img src="./img/фейсбук.svg"></a>
-            </figure>
-            <figure class="social-whatsapp">
-                <a href="https://wa.me/+380508505888"><img src="./img/ватсап.svg"></a>
-            </figure>
-            <figure class="social-tg">
-                <a href="t.me/Olexgood"><img src="./img/tg_50х44.svg"></a>
-            </figure>
-        </nav>
-    </footer>
-    </body>
 
+        </main>    
+        <footer class="footer">
+            <nav class="nav-1">
+                <a href="#" class="phone">+38 (050) 850 58 88</a>
+                <a href="#" class="email">photik.info@gmail.com</a>
+                <a href="#" class="map">Україна, м. Київ</a>
+            </nav>              
+            <nav class="nav-2">
+                <a href="#" class="wedd">Весільна фотосесія</a>
+                <a href="#" class="school">Фотозйомка випускних</a>
+                <a href="#" class="studio">Фотосесії в студії</a>
+            </nav>                
+            <div class="social-descripion-container">
+                <p class="social-description">Мене можна знайти в соціальних мережах</p>
+            </div>
+            <nav class="social-icons">            
+                <figure class="social-instagram">
+                    <a href="https://www.instagram.com/olexgood/?hl=ru"><img src="./img/инстаграм.svg"></a>
+                </figure>
+                <figure class="social-facebook">
+                    <a href="https://www.facebook.com/Olex1405"><img src="./img/фейсбук.svg"></a>
+                </figure>
+                <figure class="social-whatsapp">
+                    <a href="https://wa.me/+380508505888"><img src="./img/ватсап.svg"></a>
+                </figure>
+                <figure class="social-tg">
+                    <a href="t.me/Olexgood"><img src="./img/tg_50х44.svg"></a>
+                </figure>
+            </nav>
+        </footer>    
+    </body>
 </html>

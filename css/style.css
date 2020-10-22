@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     text-decoration: none;    
+    scroll-behavior: smooth;
 }
 button {
     border: 0;
@@ -10,6 +11,7 @@ button {
     margin: 0;
     padding-top: 53px;
     font-family: 'Roboto', sans-serif;
+
 }
 .logo {
     position: absolute;
@@ -1014,6 +1016,7 @@ __________________
     top: 44.65%;
     bottom: 32.09%;
 }
+
 ________
 
  
@@ -1151,10 +1154,10 @@ ________
   }
   .popup .close {
     position: absolute;
-    top: 20px;
+    top: 17px;
     right: 30px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
