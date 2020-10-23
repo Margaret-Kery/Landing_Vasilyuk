@@ -126,15 +126,7 @@ main{
 .menu-item:not(:last-child) {
     margin-right: 50px;
 }
-.description-advantages {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 42px;
 
-    color: #000000;
-}
 img {
     display: block;
     height: auto;
@@ -604,12 +596,13 @@ margin-right: -7%;
     top: 0px; 
 }
 .operating_wrap{
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .question_table{
-   width: 495px;
+   width: 480px;
    height: 450px;
    display: flex;
    flex-direction: column;
@@ -665,7 +658,12 @@ __________________
 .flexbox {
     display: flex;
 }
-
+.portfolio_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /* Правый марджин для сетки многострочного контейнера, исключаем каждый третий */
 .portfolio-card:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -678,7 +676,7 @@ __________________
 
 /* Рассчет ширины карточки в портфолио */
 .portfolio-card {
-    width: calc((100% - 2 * 30px) / 3);   
+    width: 441px;   
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; 
@@ -1408,3 +1406,27 @@ ________
   a {
     outline: none; /* Убираем границу вокруг ссылок  */
    }
+
+.advantages_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantages_item{
+    width: 460px;
+    height: 124px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.advantages_description{
+    padding: 4px;
+    padding-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
