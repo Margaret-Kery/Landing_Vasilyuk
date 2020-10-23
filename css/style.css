@@ -1181,3 +1181,15 @@ ________
   a {
     outline: none; /* Убираем границу вокруг ссылок  */
    }
+.temp_center{
+    z-index: 150;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.modal{
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+}

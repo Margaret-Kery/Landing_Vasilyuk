@@ -1,392 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Фотограф Василюк</title>
-        <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  
-    </head>
-    <body class="smooth-scroll">
-        <header class="header">
-            <img src="img/лого.svg" alt="logo Vasilyuk" class="logo"> 
-            <nav class="main-nav"> 
-                <ul class="list">
-                    <li class="item">
-                        <a href="#about" class="about-me">Про мене </a>
-                    </li>            
-                    <li class="item">
-                        <a href="#service" class="photographer-service">Послуги фотографа </a>
-                    </li>
-                    <li class="item">
-                        <a href="#popup1" class="contact">Контакти </a>
-                    </li>
-                    <li class="item">
-                        <a href="#advantages" class="profit">Переваги </a>
-                    </li>
-                    <li class="item">
-                        <a href="#operating-procedure"class="Procedure"> Порядок роботи </a>
-                    </li>
-                    <li class="item">
-                        <a href="#reviews" class="review">Відгуки </a>
-                    </li>
-                    <li class="item">
-                        <a class="contact-link" href="tel:+380508505888">+38 (050) 850 58 88</a>
-                    </li> 
-                </ul> 
-            </nav>       
-            <img src="img/Vector.jpg" alt="bag" class="bag">                    
-        </header>
-        <main>
-            <h1 class="love-description-1">Сімейний фотограф</h1>
-            <figure class="love-figure">         
-                <figcaption class="love-description-2">Фотозйомки в Києві та області. Збережу <br>ваші незабутні моменти назавжди</figcaption>
-                <img src="img/love.png" alt="love"class="love-img">
-                <a class="button-1" href="#popup1" >Замовити зйомку</a>
-            </figure>
-            <figure>  
-                <img src="./img/2_1.png" alt="about me" class="nikon">
-                <figcaption id="about" class="nikon-description-1">Про мене</figcaption>
-                <figcaption class="nikon-description-2">Я завжди прагну відобразити натуральність образу — емоційність і щирість. Продумана композиція, підготовлений образ, і непідробні емоції — забезпечують можливість створити дійсно зачаровуючу фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.</figcaption> 
-            </figure> 
-            <figure class="frame-1">
-                <p id="service" class="service">Послуги фотографа</p>
-                <!-- Портфолио -->
-                <ul class="list flexbox wrap">
-                    <li class="portfolio-card flexbox">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/weading 1.png"
-                              alt="Весільна фотосесія"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Весільна фотосесія</h2>
-                            <p class="text nomargin">Це тільки підготовка і очікування церемонії здається нескінченно довгими, а сама церемонія проходить за лічені хвилини. Але ці хвилини одні з найважливіших у Вашому житті і звичайно ж про них повинна залишитися приємна пам’ять.</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/pregnant-690735_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px"
-                            />
-                          </div class="minmargin">
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія вагітності</h2>
-                            <p class="text nomargin">Вагітність - це найніжніший період в житті кожної жінки і так хочеться мати згадку про нього. Саме тому фотосесії вагітних стали трендом за останні роки. </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/a-couple-of-1694334_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія Love Story</h2>
-                            <p class="text nomargin">Історія кохання кожної пари дивовижна і неповторна. Адже в світі немає жодної однакової пари. Закохані люди настільки відкриті один перед одним, так щирі і безтурботні, що хочеться закарбувати ... </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/persons-731514_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Сімейна фотосесія</h2>
-                            <p class="text nomargin">З часом все змінюється, діти дорослішають і покидають сімейний затишок, а фото завжди допоможуть вам згадати та повернутися в ті щасливі хвилини сімейного дозвілля. </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div>
-                            <img
-                              src="./img/mothers-3389671_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div class="minmargin">
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Дитяча фотосесія</h2>
-                            <p class="text nomargin">Дитина - найважливіша і найдорожча людина для своїх батьків. Діти ростуть, змінюються, набувають все нові особливості. Встежити за всіма цими змінами і зберегти пам'ять про них допомагають фотографії.  </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/wreath-842237_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Індивідуальна фотосесія</h2>
-                            <p class="text nomargin">Індивідуальна фотосесія - це можливість висловити себе, продемонструвати оточуючим свою унікальність, побачити себе в зовсім іншому образі.  </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div>
-                            <img
-                              src="./img/religion-3930469_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія хрестин</h2>
-                            <p class="text nomargin">Хрещення — найперше Таїнство, таїнство духовного перенародження, яке звершується над людьми, що вступають до Христової Церкви.  </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div>
-                            <img
-                              src="./img/flower-achway-2574849_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія вінчання</h2>
-                            <p class="text nomargin">Вінчання – не просто прекрасний красивий обряд або древня традиція. Вінчання – це велике церковне Таїнство, через яке подружжя отримують благодать Божу, коли Сам Господь незримо з’єднує їх в одне ціле, в єдину плоть ... </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/money-2696234_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Зйомка для бізнесу</h2>
-                            <p class="text nomargin">Фотография для бизнеса – ваш прекрасный шанс произвести незабываемое впечатление на потенциальных партнёров или работодателей. </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/graduations-4288787_1920 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотозйомка випускних</h2>
-                            <p class="text nomargin">Випускний вечір (бал випускників) — церемонія, пов'язана із закінченням навчального закладу. Випускні вечори зазвичай проводять у школах, коледжах, вищих навчальних закладах.</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/image 1.png"
-                              alt="ЗАГЛУШКА"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія на природі</h2>
-                            <p class="text nomargin">Фотосесії на природі — відмінний спосіб не тільки отримати гарні фотографії, а й підняти собі настрій. Зйомки проводяться в парках, ботанічних садах, на вулицях міста та за межами міста. Природний антураж ... </p>
-                          </div class="minmargin">
-                        </a>
-                      </li>
-                      <li class="portfolio-card">
-                        <a href="#popup1" class="link portfolio-link">
-                          <div class="minmargin">
-                            <img
-                              src="./img/image 2.png"
-                              alt="Photo shoot in the studio"
-                              width="463" height="320px" 
-                            />
-                          </div>
-                          <div class="portfolio-card-title">
-                            <h2 class="title">Фотосесія в студії</h2>
-                            <p class="text nomargin">Фотосесія в студії хороша для серйозних постановочних робіт для портфоліо моделей, або для певних стилів зйомки. Величезний вибір реквізиту – різноманітні фони, різні види світла і багато інших приємних дрібниці...</p>
-                          </div>
-                        </a>
-                      </li>
-                </ul>
 
-            </figure>
-            <figure class="frame-2">
-                <p id="advantages" class="advantages">Переваги</p>
-                <section class="sked-1">
-                    <img src="./img/graphic 1.svg" class="icon-adv">
-                    <p class="description-advantages">4 роки досвіду</p>
-                </section>
-                <section class="sked-2">
-                    <img src="./img/photograph 1.svg" class="icon-adv">
-                    <p class="description-advantages">Більше 500 зйомок</p>
-                </section>
-                <section class="sked-3">
-                    <img src="./img/star 1.svg" class="icon-adv">
-                    <p class="description-advantages">Якість фото</p>
-                </section>
-                <section class="sked-4">
-                    <img src="./img/book 1.svg" class="icon-adv">
-                    <p class="description-advantages">Навчанная в ProFoto</p>
-                </section>
-                <section class="sked-5">
-                    <img src="./img/sport-team 1.svg" class="icon-adv">
-                    <p class="description-advantages">Проводжу Workshop</p>
-                </section>
-                <section class="sked-6">
-                    <img src="./img/face 1.svg" class="icon-adv">
-                    <p class="description-advantages">Справжні емоції</p>
-                </section>
-            </figure>
-            <figure class="frame-3">
-                <p id="operating-procedure" class="operating-procedure">Порядок роботи</p>
-                <section class="list-1">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Знайомство</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-2">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Образ</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-3">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Аванс</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-4">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Локація</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-5">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Підрядчик</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-6">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Зйомка</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-7">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Обробка</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="list-8">
-                    <img src="./img/Arrow 1.svg" class="arrow">
-                    <p class="list-text">Передача</p>
-                    <img src="./img/Group 1.svg" class="question">
-                </section>
-                <section class="place-photo">
-                    <img src="./img/girl-2169467_1920 2.svg" class="photo">
-                </section>
-            </figure>
-            <a class="button-2" href="#popup1" >Замовити зйомку</a>
-            <figure class="frame-4">
-                <p id="reviews" class="reviews">Відгуки</p>
-                <section class="mosaic_13">
-                    <img src="./img/stars1.svg" class="stars-1">
-                    <p class="list-text-2">Олена</p>
-                    <p class="list-text-3"> 02.05.2020 </p>
-                    <p class="list-description-1">Дякую!<br>Дуже круті фото.</p>
-                </section >
-                <section class="mosaic_14">
-                    <img src="./img/stars3.svg" class="stars-2">
-                    <p class="list-text-2">Андрій</p>
-                    <p class="list-text-3">02.10.2019</p>
-                    <p class="list-description-1">Забрали фотки і альбом, дуже класно вийшло. Якість вражає!</p>
-                </section>
-                <section class="mosaic_15">
-                    <img src="./img/stars3.svg" class="stars-3">
-                    <p class="list-text-2">Дарина</p>
-                    <p class="list-text-3">18.03.2020</p>
-                    <p class="list-description-1">Олексій, хочу ще раз подякувати за фото. Вони крутееезні! Тепер буду знати до кого звертатися та кого радить друзям! Все супер. Дякую!</p>
-                </section>
-                <img src="./img/Arrow 2.svg" class="arrow-2">
-                <img src="./img/слайдер.svg" class="slider">
-                <img src="./img/Arrow 1.svg" class="arrow-1">
-            </figure>    
-            <div id="popup1" class="overlay">
-                <div class="popup">
-                    <form action="/resend" method="POST">
-                        <legend class="popname">Зворотній зв'язок</legend>
-                        <a class="close" href="#">&times;</a>
-                        <class class="content">
-                            <div class="inpopname">
-                                <p><label for="username" >Ім'я</label>
-                                <input type="text" id="username" name="name" placeholder="Як до Вас звертатися?" ></p>
-                            </div>
-                            <div class="inpopphone">
-                                <p><label for="tel">Телефон</label>
-                                <input type="tel" id="tel" name="phone" placeholder="Введіть номер"></p>
-                            </div>
-                            <button type="submit" class="btn">Замовити зйомку</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотограф Василюк</title>
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        </main>    
-        <footer class="footer">
-            <nav class="nav-1">
-                <a href="#" class="phone">+38 (050) 850 58 88</a>
-                <a href="#" class="email">photik.info@gmail.com</a>
-                <a href="#" class="map">Україна, м. Київ</a>
-            </nav>              
-            <nav class="nav-2">
-                <a href="#" class="wedd">Весільна фотосесія</a>
-                <a href="#" class="school">Фотозйомка випускних</a>
-                <a href="#" class="studio">Фотосесії в студії</a>
-            </nav>                
-            <div class="social-descripion-container">
-                <p class="social-description">Мене можна знайти в соціальних мережах</p>
-            </div>
-            <nav class="social-icons">            
-                <figure class="social-instagram">
-                    <a href="https://www.instagram.com/olexgood/?hl=ru"><img src="./img/инстаграм.svg"></a>
-                </figure>
-                <figure class="social-facebook">
-                    <a href="https://www.facebook.com/Olex1405"><img src="./img/фейсбук.svg"></a>
-                </figure>
-                <figure class="social-whatsapp">
-                    <a href="https://wa.me/+380508505888"><img src="./img/ватсап.svg"></a>
-                </figure>
-                <figure class="social-tg">
-                    <a href="t.me/Olexgood"><img src="./img/tg_50х44.svg"></a>
-                </figure>
-            </nav>
-        </footer>    
-    </body>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+
+<body class="smooth-scroll ">
+  <div id="popup1" class="overlay modal">
+    <div class="popup">
+      <form action="/resend" method="POST">
+        <legend class="popname">Зворотній зв'язок</legend>
+        <a class="close" href="#">&times;</a>
+        <class class="content">
+          <div class="inpopname">
+            <p><label for="username">Ім'я</label>
+              <input type="text" id="username" name="name" placeholder="Як до Вас звертатися?">
+            </p>
+          </div>
+          <div class="inpopphone">
+            <p><label for="tel">Телефон</label>
+              <input type="tel" id="tel" name="phone" placeholder="Введіть номер">
+            </p>
+          </div>
+          <button type="submit" class="btn">Замовити зйомку</button>
+    </div>
+    </form>
+  </div>
+  </div>
+  <div class="temp_center">
+    <header class="header">
+      <img src="img/лого.svg" alt="logo Vasilyuk" class="logo">
+      <nav class="main-nav">
+        <ul class="list">
+          <li class="item">
+            <a href="#about" class="about-me">Про мене </a>
+          </li>
+          <li class="item">
+            <a href="#service" class="photographer-service">Послуги фотографа </a>
+          </li>
+          <li class="item">
+            <a href="#popup1" class="contact">Контакти </a>
+          </li>
+          <li class="item">
+            <a href="#advantages" class="profit">Переваги </a>
+          </li>
+          <li class="item">
+            <a href="#operating-procedure" class="Procedure"> Порядок роботи </a>
+          </li>
+          <li class="item">
+            <a href="#reviews" class="review">Відгуки </a>
+          </li>
+          <li class="item">
+            <a class="contact-link" href="tel:+380508505888">+38 (050) 850 58 88</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="img/Vector.jpg" alt="bag" class="bag">
+    </header>
+    <main>
+      <h1 class="love-description-1">Сімейний фотограф</h1>
+      <figure class="love-figure">
+        <figcaption class="love-description-2">Фотозйомки в Києві та області. Збережу <br>ваші незабутні моменти
+          назавжди</figcaption>
+        <img src="img/love.png" alt="love" class="love-img">
+        <a class="button-1" href="#popup1">Замовити зйомку</a>
+      </figure>
+      <figure>
+        <img src="./img/2_1.png" alt="about me" class="nikon">
+        <figcaption id="about" class="nikon-description-1">Про мене</figcaption>
+        <figcaption class="nikon-description-2">Я завжди прагну відобразити натуральність образу — емоційність і
+          щирість. Продумана композиція, підготовлений образ, і непідробні емоції — забезпечують можливість створити
+          дійсно зачаровуючу фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.
+        </figcaption>
+      </figure>
+      <figure class="frame-1">
+        <p id="service" class="service">Послуги фотографа</p>
+        <!-- Портфолио -->
+        <ul class="list flexbox wrap">
+          <li class="portfolio-card flexbox">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/weading 1.png" alt="Весільна фотосесія" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Весільна фотосесія</h2>
+                <p class="text nomargin">Це тільки підготовка і очікування церемонії здається нескінченно довгими, а
+                  сама церемонія проходить за лічені хвилини. Але ці хвилини одні з найважливіших у Вашому житті і
+                  звичайно ж про них повинна залишитися приємна пам’ять.</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/pregnant-690735_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div class="minmargin">
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія вагітності</h2>
+                <p class="text nomargin">Вагітність - це найніжніший період в житті кожної жінки і так хочеться мати
+                  згадку про нього. Саме тому фотосесії вагітних стали трендом за останні роки. </p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/a-couple-of-1694334_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія Love Story</h2>
+                <p class="text nomargin">Історія кохання кожної пари дивовижна і неповторна. Адже в світі немає жодної
+                  однакової пари. Закохані люди настільки відкриті один перед одним, так щирі і безтурботні, що хочеться
+                  закарбувати ... </p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/persons-731514_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Сімейна фотосесія</h2>
+                <p class="text nomargin">З часом все змінюється, діти дорослішають і покидають сімейний затишок, а фото
+                  завжди допоможуть вам згадати та повернутися в ті щасливі хвилини сімейного дозвілля. </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div>
+                <img src="./img/mothers-3389671_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div class="minmargin">
+              <div class="portfolio-card-title">
+                <h2 class="title">Дитяча фотосесія</h2>
+                <p class="text nomargin">Дитина - найважливіша і найдорожча людина для своїх батьків. Діти ростуть,
+                  змінюються, набувають все нові особливості. Встежити за всіма цими змінами і зберегти пам'ять про них
+                  допомагають фотографії. </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/wreath-842237_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Індивідуальна фотосесія</h2>
+                <p class="text nomargin">Індивідуальна фотосесія - це можливість висловити себе, продемонструвати
+                  оточуючим свою унікальність, побачити себе в зовсім іншому образі. </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div>
+                <img src="./img/religion-3930469_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія хрестин</h2>
+                <p class="text nomargin">Хрещення — найперше Таїнство, таїнство духовного перенародження, яке
+                  звершується над людьми, що вступають до Христової Церкви. </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div>
+                <img src="./img/flower-achway-2574849_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія вінчання</h2>
+                <p class="text nomargin">Вінчання – не просто прекрасний красивий обряд або древня традиція. Вінчання –
+                  це велике церковне Таїнство, через яке подружжя отримують благодать Божу, коли Сам Господь незримо
+                  з’єднує їх в одне ціле, в єдину плоть ... </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/money-2696234_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Зйомка для бізнесу</h2>
+                <p class="text nomargin">Фотография для бизнеса – ваш прекрасный шанс произвести незабываемое
+                  впечатление на потенциальных партнёров или работодателей. </p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/graduations-4288787_1920 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотозйомка випускних</h2>
+                <p class="text nomargin">Випускний вечір (бал випускників) — церемонія, пов'язана із закінченням
+                  навчального закладу. Випускні вечори зазвичай проводять у школах, коледжах, вищих навчальних закладах.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/image 1.png" alt="ЗАГЛУШКА" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія на природі</h2>
+                <p class="text nomargin">Фотосесії на природі — відмінний спосіб не тільки отримати гарні фотографії, а
+                  й підняти собі настрій. Зйомки проводяться в парках, ботанічних садах, на вулицях міста та за межами
+                  міста. Природний антураж ... </p>
+              </div class="minmargin">
+            </a>
+          </li>
+          <li class="portfolio-card">
+            <a href="#popup1" class="link portfolio-link">
+              <div class="minmargin">
+                <img src="./img/image 2.png" alt="Photo shoot in the studio" width="463" height="320px" />
+              </div>
+              <div class="portfolio-card-title">
+                <h2 class="title">Фотосесія в студії</h2>
+                <p class="text nomargin">Фотосесія в студії хороша для серйозних постановочних робіт для портфоліо
+                  моделей, або для певних стилів зйомки. Величезний вибір реквізиту – різноманітні фони, різні види
+                  світла і багато інших приємних дрібниці...</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </figure>
+      <figure class="frame-2">
+        <p id="advantages" class="advantages">Переваги</p>
+        <section class="sked-1">
+          <img src="./img/graphic 1.svg" class="icon-adv">
+          <p class="description-advantages">4 роки досвіду</p>
+        </section>
+        <section class="sked-2">
+          <img src="./img/photograph 1.svg" class="icon-adv">
+          <p class="description-advantages">Більше 500 зйомок</p>
+        </section>
+        <section class="sked-3">
+          <img src="./img/star 1.svg" class="icon-adv">
+          <p class="description-advantages">Якість фото</p>
+        </section>
+        <section class="sked-4">
+          <img src="./img/book 1.svg" class="icon-adv">
+          <p class="description-advantages">Навчанная в ProFoto</p>
+        </section>
+        <section class="sked-5">
+          <img src="./img/sport-team 1.svg" class="icon-adv">
+          <p class="description-advantages">Проводжу Workshop</p>
+        </section>
+        <section class="sked-6">
+          <img src="./img/face 1.svg" class="icon-adv">
+          <p class="description-advantages">Справжні емоції</p>
+        </section>
+      </figure>
+      <figure class="frame-3">
+        <p id="operating-procedure" class="operating-procedure">Порядок роботи</p>
+        <section class="list-1">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Знайомство</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-2">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Образ</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-3">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Аванс</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-4">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Локація</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-5">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Підрядчик</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-6">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Зйомка</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-7">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Обробка</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="list-8">
+          <img src="./img/Arrow 1.svg" class="arrow">
+          <p class="list-text">Передача</p>
+          <img src="./img/Group 1.svg" class="question">
+        </section>
+        <section class="place-photo">
+          <img src="./img/girl-2169467_1920 2.svg" class="photo">
+        </section>
+      </figure>
+      <a class="button-2" href="#popup1">Замовити зйомку</a>
+      <figure class="frame-4">
+        <p id="reviews" class="reviews">Відгуки</p>
+        <section class="mosaic_13">
+          <img src="./img/stars1.svg" class="stars-1">
+          <p class="list-text-2">Олена</p>
+          <p class="list-text-3"> 02.05.2020 </p>
+          <p class="list-description-1">Дякую!<br>Дуже круті фото.</p>
+        </section>
+        <section class="mosaic_14">
+          <img src="./img/stars3.svg" class="stars-2">
+          <p class="list-text-2">Андрій</p>
+          <p class="list-text-3">02.10.2019</p>
+          <p class="list-description-1">Забрали фотки і альбом, дуже класно вийшло. Якість вражає!</p>
+        </section>
+        <section class="mosaic_15">
+          <img src="./img/stars3.svg" class="stars-3">
+          <p class="list-text-2">Дарина</p>
+          <p class="list-text-3">18.03.2020</p>
+          <p class="list-description-1">Олексій, хочу ще раз подякувати за фото. Вони крутееезні! Тепер буду знати до
+            кого звертатися та кого радить друзям! Все супер. Дякую!</p>
+        </section>
+        <img src="./img/Arrow 2.svg" class="arrow-2">
+        <img src="./img/слайдер.svg" class="slider">
+        <img src="./img/Arrow 1.svg" class="arrow-1">
+      </figure>
+
+
+    </main>
+    <footer class="footer">
+      <nav class="nav-1">
+        <a href="#" class="phone">+38 (050) 850 58 88</a>
+        <a href="#" class="email">photik.info@gmail.com</a>
+        <a href="#" class="map">Україна, м. Київ</a>
+      </nav>
+      <nav class="nav-2">
+        <a href="#" class="wedd">Весільна фотосесія</a>
+        <a href="#" class="school">Фотозйомка випускних</a>
+        <a href="#" class="studio">Фотосесії в студії</a>
+      </nav>
+      <div class="social-descripion-container">
+        <p class="social-description">Мене можна знайти в соціальних мережах</p>
+      </div>
+      <nav class="social-icons">
+        <figure class="social-instagram">
+          <a href="https://www.instagram.com/olexgood/?hl=ru"><img src="./img/инстаграм.svg"></a>
+        </figure>
+        <figure class="social-facebook">
+          <a href="https://www.facebook.com/Olex1405"><img src="./img/фейсбук.svg"></a>
+        </figure>
+        <figure class="social-whatsapp">
+          <a href="https://wa.me/+380508505888"><img src="./img/ватсап.svg"></a>
+        </figure>
+        <figure class="social-tg">
+          <a href="t.me/Olexgood"><img src="./img/tg_50х44.svg"></a>
+        </figure>
+      </nav>
+    </footer>
+  </div>
+</body>
+
 </html>
