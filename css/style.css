@@ -1,7 +1,6 @@
 *{
     margin: 0 auto;
     text-decoration: none;    
-    scroll-behavior: smooth;
 }
 button {
     border: 0;
@@ -11,7 +10,6 @@ button {
     margin: 0;
     padding-top: 53px;
     font-family: 'Roboto', sans-serif;
-
 }
 .logo {
     position: absolute;
@@ -1016,7 +1014,6 @@ __________________
     top: 44.65%;
     bottom: 32.09%;
 }
-
 ________
 
  
@@ -1154,10 +1151,10 @@ ________
   }
   .popup .close {
     position: absolute;
-    top: 17px;
+    top: 20px;
     right: 30px;
     transition: all 200ms;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
@@ -1181,15 +1178,3 @@ ________
   a {
     outline: none; /* Убираем границу вокруг ссылок  */
    }
-.temp_center{
-    z-index: 150;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.modal{
-    z-index: 200;
-    position: fixed;
-    width: 100%;
-    min-height: 100vh;
-}
