@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотограф Василюк</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+    <header class="header container">
+        <div id="JS_Menu" class="header_burger" data-id="JS_Nav__close">
+            <img src="/img/menu.svg" alt="menu">
+        </div>
+        <div class="header_logo">
+            <img src="/img/лого.svg" alt="">
+        </div>
+        <ul id="JS_Nav" class="header_nav" data-id="JS_Nav__close">
+            <li class="header_nav__item" data-id="JS_Nav__close">
+                <a href="#about-me" data-id="JS_Nav__close">Про мене</a>
+            </li>
+            <li class="header_nav__item" data-id="JS_Nav__close">
+                <a href="#service" data-id="JS_Nav__close">Послуги фотографа</a>
+            </li>
+            <li class="header_nav__item" data-id="JS_Nav__close">
+                <a href="/mini.html" data-id="JS_Nav__close">Контакти</a>
+            </li>
+            <li class="header_nav__item" data-id="JS_Nav__close">
+                <a href="/mini.html" data-id="JS_Nav__close">Переваги</a>
+            </li>
+            <li class="header_nav__item" data-id="JS_Nav__close">
+                <a href="/mini.html" data-id="JS_Nav__close">Порядок роботи</a>
+            </li>
+        </ul>
+        <div class="header_busket">
+            <img src="/img/busket.svg" alt="" />
+        </div>
+    </header>
+    <main class="container">
+        <!-- Banner -->
+        <section class="preview">
+            <div class="preview_bg">
+                <img src="./img/love2.png" alt="love" />
+            </div>
+            <div class="preview_info">
+                <h1>
+                    Сімейний Фотограф
+                </h1>
+                <div>
+                    <p>
+                        Фотозйомки в Києві та області.
+                    </p>
+                    <p>
+                        Збережу ваші незабутні
+                    </p>
+                    <p>
+                        моменти назавжди.
+                    </p>
+                </div>
+                <button>
+                    Замовити зйомку
+                </button>
+            </div>
+
+        </section>
+        <section id="about-me" class="about_me">
+            <h2>Про мене</h2>
+            <p>Я завжди прагну відобразити натуральність образу — емоційність і щирість. Продумана композиція,
+                підготовлений образ, і непідробні емоції — забезпечують можливість створити дійсно зачаровуючу
+                фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.</p>
+        </section>
+        <section class="portfolio">
+            <p id="service" class="service">Послуги фотографа</p>
+            <!-- Портфолио -->
+            <ul class="portfolio_cards" id='JS_Portfolio'></ul>
+            <button class="portfolio_more" id="JS_Portfolio__Show">show more</button>
+        </section>
+        <section class="reviews">
+            <h3 id="service" class="reviews_title">Відгуки</h3>
+            <!-- Відгуки -->
+            <div class="reviews_slider">
+                <ul class="reviews_cards" id='JS_Reviews'>
+                </ul>
+                <div class="reviews_btn" id='JS_Reviews__btn'>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+
+    </footer>
+    <script src="/js/menu.js"></script>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/reviews.js"></script>
+</body>
+
+</html>
