@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  list-style-type: none;
 }
 .container {
   width: 320px;
@@ -265,7 +266,24 @@ width: 40px;
 .reviews_btn__item:hover {
   background: orange;
 }
-
+footer {
+  border-top: 1px solid #000;
+}
+.social_panel {
+  width: 320px;
+  height: 84px;
+  padding: 20px 35px 32px;
+}
+.social-icons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social-icons img {
+  height: 32px;
+}
 @media screen and (min-width: 540px) {
   .container {
     width: 520px;
