@@ -1,12 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style-type: none;
 }
 .container {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  padding: 10px;
+  margin: 0 auto;
 }
 .header {
   position: relative;
@@ -190,10 +195,14 @@
   color: #000000;
 }
 .portfolio_cards {
-  padding: 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
 }
 .portfolio_card {
   width: 100%;
+  margin: 10px;
 }
 .portfolio_card__photo {
   width: 100%;
@@ -209,13 +218,46 @@
   border: 1px solid transparent;
   text-decoration: underline;
 }
+.portfolio-card-title > .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  /* identical to box height, or 22px */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+.portfolio-card-title > .text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 150%;
+  /* or 15px */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+.portfolio-link {
+  display: inline-block;
+  width: 100%;
+  border-right: 1px solid #ebe6e6;
+  border-bottom: 1px solid #ebe6e6;
+  border-left: 1px solid #ebe6e6;
+}
 .reviews {
   width: 100%;
 }
 .reviews_title {
   color: #515151;
 }
-.reviews_slider{
+.reviews_slider {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,29 +265,29 @@
 .reviews_cards {
   width: max-content;
 }
-.reviews_card{
+.reviews_card {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.reviews_card__title{
+.reviews_card__title {
   color: #515151;
 }
-.reviews_card__info{
+.reviews_card__info {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.reviews_cards__star{
-width: 40px;
+.reviews_cards__star {
+  width: 40px;
 }
-.reviews_cards__data{
+.reviews_cards__data {
   color: #000;
 }
-.reviews_cards__desc{
+.reviews_cards__desc {
   color: #000;
 }
 .reviews_btn {
@@ -293,14 +335,22 @@ footer {
     flex-wrap: wrap;
   }
   .portfolio_card {
+    margin: 15px;
     width: 300px;
   }
-  .reviews_card{
+  .reviews_card {
     width: 300px;
   }
+
 }
 @media screen and (min-width: 980px) {
   .container {
-    width: 960px;
+    width: 1440px;
+  }
+  .portfolio_card {
+   width: 460px;
+  }
+  .portfolio_cards{
+    margin: -15px;
   }
 }
