@@ -251,6 +251,44 @@
   border-bottom: 1px solid #ebe6e6;
   border-left: 1px solid #ebe6e6;
 }
+/* --- */
+.procedure_title {  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.procedure_arrow{
+  position: absolute;
+  width: 84px;
+  left: 0.5px;
+  top: 15px;
+}
+.procedure_text{
+  position: absolute;
+  width: 170px;
+  height: 30px;
+  left: 114.5px;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 120%;
+  color: #000000;
+}
+.procedure_question{
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 315px;
+  top: 8px;
+}
+/* --- */
 .reviews {
   width: 100%;
 }
