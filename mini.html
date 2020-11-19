@@ -13,111 +13,142 @@
 
 </head>
 
-<body class="container">
-    <header class="header container">
-        <div id="JS_Menu" class="header_burger" data-id="JS_Nav__close">
-            <img src="/img/menu.svg" alt="menu">
-        </div>
-        <div class="header_logo">
-            <img src="/img/лого.svg" alt="">
-        </div>
-        <ul id="JS_Nav" class="header_nav" data-id="JS_Nav__close">
-            <li class="header_nav__item" data-id="JS_Nav__close">
-                <a href="#about-me" data-id="JS_Nav__close">Про мене</a>
-            </li>
-            <li class="header_nav__item" data-id="JS_Nav__close">
-                <a href="#service" data-id="JS_Nav__close">Послуги фотографа</a>
-            </li>
-            <li class="header_nav__item" data-id="JS_Nav__close">
-                <a href="/mini.html" data-id="JS_Nav__close">Контакти</a>
-            </li>
-            <li class="header_nav__item" data-id="JS_Nav__close">
-                <a href="/mini.html" data-id="JS_Nav__close">Переваги</a>
-            </li>
-            <li class="header_nav__item" data-id="JS_Nav__close">
-                <a href="/mini.html" data-id="JS_Nav__close">Порядок роботи</a>
-            </li>
-        </ul>
-        <div class="header_busket">
-            <img src="/img/busket.svg" alt="" />
-        </div>
+<body>
+
+    <header>
+        <section class="header container">
+            <div id="JS_Menu" class="header_burger" data-id="JS_Nav__close">
+                <img src="/img/menu.svg" alt="menu">
+            </div>
+            <div class="header_logo">
+                <img src="/img/logo.svg" alt="header_logo">
+            </div>
+            <ul id="JS_Nav" class="header_nav" data-id="JS_Nav__close">
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#about-me" data-id="JS_Nav__close"> Про мене </a>
+                </li>
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#service" data-id="JS_Nav__close"> Послуги фотографа </a>
+                </li>
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#popup1" data-id="JS_Nav__close"> Контакти </a>
+                </li>
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#advantages" data-id="JS_Nav__close"> Переваги </a>
+                </li>
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#operating-procedure"" data-id=" JS_Nav__close"> Порядок роботи </a>
+                </li>
+                <li class="header_nav__item" data-id="JS_Nav__close">
+                    <a href="#reviews"" data-id=" JS_Nav__close"> Відгуки </a>
+                </li>
+            </ul>
+            <div class="menu_tel">
+                <a href="tel:+380508505888">+38 (050) 850 58 88</a>
+            </div>
+            <div class="header_busket header_none_2">
+                <img src="/img/busket.svg" alt="">
+            </div>
+        </section>
     </header>
-    <main class="container">
+    <main>
+        <!-- Modal -->
+        <div id="JS_MODAL" class="modal" onclick="lisenerClose()">
+            <div class="popup">
+                <form action="/resend" method="POST">
+                    <legend class="popname">Зворотній зв'язок</legend>
+                    <button class="close" onclick="closeModal()"></button>&times;</button>
+                    <class class="content">
+                        <div class="inpopname">
+                            <p>
+                                <label for="username">Ім'я</label>
+                                <input type="text" id="username" name="name" placeholder="Як до Вас звертатися?">
+                            </p>
+                        </div>
+                        <div class="inpopphone">
+                            <p>
+                                <label for="tel">Телефон</label>
+                                <input type="tel" id="tel" name="phone" placeholder="Введіть номер">
+                            </p>
+                        </div>
+                        <button type="submit" class="btn">Замовити зйомку</button>
+            </div>
+            </form>
+        </div>
         <!-- Banner -->
         <section class="preview">
-            <div class="preview_bg">
+            <!-- <div class="preview_bg">
                 <img src="./img/love2.png" alt="love" />
-            </div>
-            <div class="preview_info">
-                <h1>
-                    Сімейний Фотограф
-                </h1>
-                <div>
-                    <p>
-                        Фотозйомки в Києві та області.
-                    </p>
-                    <p>
-                        Збережу ваші незабутні
-                    </p>
-                    <p>
-                        моменти назавжди.
-                    </p>
+            </div> -->
+            <div class="preview_wrap container">
+                <div class="preview_info">
+                    <h1>
+                        Сімейний Фотограф
+                    </h1>
+                    <div>
+                        <p>
+                            Фотозйомки в Києві та області.
+                        </p>
+                        <p>
+                            Збережу ваші незабутні
+                        </p>
+                        <p>
+                            моменти назавжди.
+                        </p>
+                    </div>
+                    <button onclick="openModal()">
+                        Замовити зйомку
+                    </button>
                 </div>
-                <button>
-                    Замовити зйомку
-                </button>
             </div>
-
         </section>
         <!-- About me -->
-        <section id="about-me" class="about_me">
+        <section id="about-me" class="about_me container">
             <h2>Про мене</h2>
             <p>Я завжди прагну відобразити натуральність образу — емоційність і щирість. Продумана композиція,
                 підготовлений образ, і непідробні емоції — забезпечують можливість створити дійсно зачаровуючу
                 фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.</p>
         </section>
         <!-- Portfolio -->
-        <section class="portfolio">
+        <section class="portfolio container">
             <p id="service" class="service">Послуги фотографа</p>
             <!-- Портфолио -->
             <ul class="portfolio_cards" id='JS_Portfolio'></ul>
-            <button class="portfolio_more" id="JS_Portfolio__Show">show more</button>
+            <button class="portfolio_more" id="JS_Portfolio__Show">Всі послуги</button>
         </section>
         <!-- Advantages -->
-        <section class="section">
-            <div class="container">
-                <h2 id="advantages" class="headers">Переваги</h2>
-                <ul class="advantages_list">
-                    <li class="advantages_item">
-                        <img src="./img/graphic 1.svg">
-                        <p class="advantages_description">4 роки досвіду</p>
-                    </li>
-                    <li class="advantages_item">
-                        <img src="./img/photograph 1.svg">
-                        <p class="advantages_description">Більше 500 зйомок</p>
-                    </li>
-                    <li class="advantages_item">
-                        <img src="./img/star 1.svg">
-                        <p class="advantages_description">Якість фото</p>
-                    </li>
-                    <li class="advantages_item">
-                        <img src="./img/book 1.svg">
-                        <p class="advantages_description">Навчанная в ProFoto</p>
-                    </li>
-                    <li class="advantages_item">
-                        <img src="./img/sport-team 1.svg">
+        <section class="container">
+            <h2 id="advantages" class="headers">Переваги</h2>
+            <ul class="advantages_list">
+                <li class="advantages_item">
+                    <img src="./img/graphic 1.svg">
+                    <p class="advantages_description">4 роки досвіду</p>
+                </li>
+                <li class="advantages_item">
+                    <img src="./img/photograph 1.svg">
+                    <p class="advantages_description">Більше 500 зйомок</p>
+                </li>
+                <li class="advantages_item">
+                    <img src="./img/star 1.svg">
+                    <p class="advantages_description">Якість фото</p>
+                </li>
+                <li class="advantages_item">
+                    <img src="./img/book 1.svg">
+                    <p class="advantages_description">Навчанная в ProFoto</p>
+                </li>
+                <li class="advantages_item">
+                    <img src="./img/sport-team 1.svg">
 
-                        <p class="advantages_description">Проводжу Workshop</p>
-                    </li>
-                    <li class="advantages_item">
-                        <img src="./img/face 1.svg">
-                        <p class="advantages_description">Справжні емоції</p>
-                    </li>
-                </ul>
-            </div>
+                    <p class="advantages_description">Проводжу Workshop</p>
+                </li>
+                <li class="advantages_item">
+                    <img src="./img/face 1.svg">
+                    <p class="advantages_description">Справжні емоції</p>
+                </li>
+            </ul>
         </section>
         <!-- Рrocedure -->
-        <section class="procedure">
+        <section class="procedure container">
             <h2 class="procedure_title">Порядок роботи</h2>
             <div class="procedure_wrap">
                 <ul class="procedure_list">
@@ -165,9 +196,13 @@
                 <img src="./img/girl-2169467_1920 2.svg" class="photo">
             </div>
         </section>
-        <button class="button" href="#popup1">Замовити зйомку</button>
-        <section class="reviews">
-            <h3 id="service" class="reviews_title">Відгуки</h3>
+        <section class="container">
+            <div class="center_button">
+                <button class="button" href="#popup1">Замовити зйомку</button>
+            </div>
+        </section>
+        <section class="reviews container">
+            <h3 id="#reviews" class="reviews_title">Відгуки</h3>
             <!-- Відгуки -->
             <div class="reviews_slider">
                 <ul class="reviews_cards" id='JS_Reviews'>
@@ -177,8 +212,8 @@
             </div>
         </section>
     </main>
-    <footer class="container">
-        <div class="social_panel">
+    <footer>
+        <div class="social_panel container">
             <ul class="social-icons">
                 <li class="social-instagram">
                     <a href="https://www.instagram.com/olexgood/?hl=ru" target="_blank"><img
@@ -199,6 +234,7 @@
     <script src="/js/menu.js"></script>
     <script src="/js/portfolio.js"></script>
     <script src="/js/reviews.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

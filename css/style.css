@@ -5,6 +5,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
 }
 .container {
   width: 100%;
@@ -13,8 +18,14 @@
   padding: 10px;
   margin: 0 auto;
 }
+header {
+  border-bottom: 1px solid #515151;
+}
 .header {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
   width: 100%;
   height: 100px;
@@ -23,7 +34,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #515151;
 }
 .header_burger {
   width: 30px;
@@ -68,6 +78,9 @@
   color: #000000;
   text-decoration: none;
 }
+.menu_tel {
+  display: none;
+}
 .header_busket {
   width: 30px;
   height: 30px;
@@ -76,11 +89,42 @@
   width: 100%;
   height: 100%;
 }
+.header_none_1 {
+  display: none;
+}
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+}
+.popup{
+  width: 100%;
+  min-width: 280px;
+  max-width: 640px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+/* Modal */
+
 .preview {
   position: relative;
+  width: 100%;
   height: 540px;
   background-image: url("../img/love2.png");
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 .preview_bg {
   position: absolute;
@@ -88,10 +132,10 @@
   width: 100%;
   height: 540px;
 }
-.preview_bg img {
+/* .preview_bg img {
   width: 100%;
   height: 100%;
-}
+} */
 .preview_info {
   position: absolute;
   display: flex;
@@ -206,6 +250,7 @@
 }
 .portfolio_card__photo {
   width: 100%;
+  height: 320px;
   object-fit: contain;
 }
 .portfolio_card__photo img {
@@ -213,10 +258,22 @@
   height: 100%;
 }
 .portfolio_more {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 10px 30px;
   background: transparent;
   border: 1px solid transparent;
-  text-decoration: underline;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+
+  text-decoration-line: underline;
+
+  color: #ffb55a;
 }
 .portfolio-card-title > .title {
   padding-top: 20px;
@@ -226,10 +283,10 @@
   font-size: 17px;
   line-height: 150%;
   /* identical to box height, or 22px */
-  
+
   text-align: center;
   letter-spacing: 0.02em;
-  
+
   color: #000000;
 }
 .portfolio-card-title > .text {
@@ -261,9 +318,9 @@
   font-size: 30px;
   line-height: 120%;
   /* identical to box height, or 36px */
-  
+
   text-align: center;
-  
+
   color: #000000;
 }
 .advantages_list {
@@ -287,13 +344,15 @@
   font-size: 15px;
   line-height: 150%;
   /* or 22px */
-  
+
   text-align: center;
-  
+
   color: #000000;
 }
 /* --- */
-.procedure{
+
+/* --- */
+.procedure {
   width: 100%;
 }
 .procedure_title {
@@ -303,9 +362,9 @@
   font-size: 30px;
   line-height: 120%;
   /* identical to box height, or 36px */
-  
+
   text-align: center;
-  
+
   color: #000000;
 }
 .procedure_wrap {
@@ -320,14 +379,15 @@
   height: 450px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
 }
 .procedure_list li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-width: 330px;
 }
 .procedure_arrow {
   width: 100px;
@@ -346,7 +406,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 120%;
   color: #000000;
 }
@@ -364,11 +424,14 @@
   /* width: 954px;
   height: 450px; */
 }
-.button {  
+.center_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
   height: 50px;
   padding: 10px 30px;
-  display: flex;
-  justify-content: center;
   border: 0;
   background: #ffb55a;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
@@ -393,9 +456,9 @@
   font-size: 30px;
   line-height: 120%;
   /* identical to box height, or 36px */
-  
+
   text-align: center;
-  
+
   color: #000000;
 }
 .reviews_slider {
@@ -409,12 +472,13 @@
   flex-wrap: nowrap;
 }
 .reviews_card {
+  margin: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FFFFFF;
-  border: 1px solid #EBE6E6;
+  background: #ffffff;
+  border: 1px solid #ebe6e6;
   box-sizing: border-box;
   width: 290px;
   min-height: 150px;
@@ -427,9 +491,9 @@
   font-size: 18px;
   line-height: 150%;
   /* identical to box height, or 22px */
-  
+
   text-align: center;
-  
+
   color: #000000;
 }
 .reviews_card__info {
@@ -442,8 +506,8 @@
 .reviews_cards__star {
   padding: 10px;
   width: 40px;
-  content: '★';
-  color: #FFB55A;
+  content: "★";
+  color: #ffb55a;
 }
 .reviews_cards__data {
   padding: 10px;
@@ -453,9 +517,9 @@
   font-size: 15px;
   line-height: 150%;
   /* identical to box height, or 15px */
-  
+
   letter-spacing: 0.02em;
-  
+
   color: #000000;
 }
 .reviews_cards__desc {
@@ -494,14 +558,15 @@
   background: orange;
 }
 .reviews_btn__item:current {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 footer {
   border-top: 1px solid #000;
 }
 .social_panel {
-  width: 320px;
-  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px 35px 32px;
 }
 .social-icons {
@@ -516,7 +581,7 @@ footer {
 }
 @media screen and (min-width: 540px) {
   .container {
-    width: 520px;
+    max-width: 520px;
   }
   .portfolio_cards {
     display: flex;
@@ -532,12 +597,151 @@ footer {
 }
 @media screen and (min-width: 980px) {
   .container {
-    width: 1440px;
+    max-width: 1460px;
   }
   .portfolio_card {
     width: 460px;
   }
   .portfolio_cards {
     margin: -15px;
+  }
+  .header_nav {
+    display: flex;
+    position: relative;
+    z-index: 30;
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  .header_burger {
+    display: none;
+  }
+  .header_nav__item {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+  }
+  .header_nav__item::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 0px;
+    height: 2px;
+    background: #000;
+    transition: all, 0.4s;
+  }
+  .header_nav__item:hover::after {
+    width: 100%;
+  }
+  .header_nav__item a {
+    font-size: 18px;
+  }
+  .menu_tel {
+    display: flex;
+  }
+  .menu_tel a {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .preview {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 820px;
+    background-image: url("../img/love.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .preview_info {
+    height: 820px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .advantages_item {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .procedure .photo {
+    display: block;
+  }
+  .reviews_slider {
+    width: 100%;
+    padding: 0;
+  }
+  .reviews_cards {
+    width: 1460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .reviews_card {
+    width: 450px;
+    padding: 20px;
+  }
+  .portfolio-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio_card {
+    height: 550px;
+    align-self: stretch;
+    transition: all, 0.5s;
+  }
+
+  .portfolio_card:hover {
+    height: 550px;
+    align-self: stretch;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .menu-nav {
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    margin-right: auto;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menu-item {
+    color: black;
+    text-decoration: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .menu-item a {
+    color: black;
+    text-decoration: none;
+  }
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
   }
 }

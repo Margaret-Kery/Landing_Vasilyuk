@@ -26,3 +26,7 @@ const menuClick = (e) => {
 };
 
 menu.addEventListener("click", menuClick);
+
+if (document.defaultView.innerWidth > 979) {
+  nav.style.display = "flex";
+}

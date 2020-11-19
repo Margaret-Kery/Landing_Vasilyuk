@@ -458,8 +458,6 @@ margin-right: -7%;
     padding-top: 17px;
     padding-bottom: 17px;
     border-bottom: 1px solid black;
-}
-.header {
     margin-right: 50px;
 }
 .header .flexbox {
@@ -742,183 +740,7 @@ __________________
     box-shadow: 5px 5px 18px rgba(0,0,0,0.2); /* Параметры тени */
 }
 __________________
-.mosaic_1 {
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 0;
-    border: 1px solid #EBE6E6;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Параметры тени */ 
-}
-.mosaic_2 {
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    margin-left: 495px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.2); /* Параметры тени */ 
-}
-.mosaic_3 {
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    margin-left: 988px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */ 
-    
-}
-.mosaic_4{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 0;
-    top: 775px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */ 
-}
-.mosaic_5{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 495px;
-    top: 775px;    
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 30px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.mosaic_6{
-    position: absolute;
-    width: 462px;
-    height: 617px;
-    left: 988px;
-    top: 775px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */   
-}
-.mosaic_7{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 0;
-    top: 1422px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */   
-}
-.mosaic_8{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 495px;
-    top: 1422px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.mosaic_9{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 988px;
-    top: 1422px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.mosaic_10{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 2px;
-    top: 2070px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.mosaic_11{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 495px;
-    top: 2070px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.mosaic_12{
-    position: absolute;
-    width: 462px;
-    height: 618px;
-    left: 988px;
-    top: 2070px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.5); /* Параметры тени */  
-}
-.sked-1 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    left: 0px;
-    margin-top: 132px;
-}
-.sked-2 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    margin-left: 494px;
-    margin-top: 132px;
-}
-.sked-3 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    margin-left: 983px;
-    margin-top: 132px;
-}
-.sked-4 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    left: 0px;
-    margin-top: 278px;
-}
-.sked-5 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    margin-left: 494px;
-    margin-top: 278px;
-}
-.sked-6 {
-    position: absolute;
-    width: 333px;
-    height: 96px;
-    margin-left: 983px;
-    margin-top: 278px;
-}
-.frame-3 {
-    position: absolute;
-    width: 1445px;
-    height: 580px;
-    left: 235px;
-    top: 4943px;
-}
-.operating-procedure {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 72px;
-    
-    text-align: center;
-}
-.list-1{
-    position: absolute;
-    height: 30px;
-    left: 0;
-    top: 130px;
-}
+
 
 
 
@@ -986,33 +808,7 @@ __________________
     line-height: 140%;
     text-align: center;
 }
-.mosaic_13{
-    position: absolute;
-    width: 462px;
-    height: 452px;
-    left: 0px;
-    top: 145px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
-}
-.mosaic_14 {
-    position: absolute;
-    width: 462px;
-    height: 452px;
-    left: 492px;
-    top: 145px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
-}
-.mosaic_15 {
-    position: absolute;
-    width: 462px;
-    height: 452px;
-    left: 984px;
-    top: 145px;
-    background: rgb(255, 255, 255); /* Цвет фона */
-    box-shadow: 5px 5px 18px rgba(0,0,0,0.3); /* Параметры тени */ 
-}
+
 .list-text-3{
     position: absolute;
     width: 90px;
