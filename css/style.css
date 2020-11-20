@@ -89,9 +89,6 @@ header {
   width: 100%;
   height: 100%;
 }
-.header_none_1 {
-  display: none;
-}
 /* Modal */
 
 .modal {
@@ -177,9 +174,10 @@ header {
   color: #000000;
 }
 .preview_info button {
-  height: 50px;
-  padding: 10px 30px;
+  height: 66px;
+  padding: 25px 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 0;
   background: #ffb55a;
@@ -192,9 +190,21 @@ header {
   font-size: 28px;
   line-height: 100%;
   color: #000000;
+  transition: background-color 0.3s 0.1s ease;
+}
+.preview_info button:hover {
+  background: #db9b4d;
+  
 }
 .about_me {
   position: relative;
+}
+.about_me div {
+  display: flex;
+  flex-direction: row;
+}
+.about_me img {
+  display: none;
 }
 .about_me h2 {
   padding-top: 70px;
@@ -430,8 +440,11 @@ header {
   justify-content: center;
 }
 .button {
-  height: 50px;
-  padding: 10px 30px;
+  height: 66px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   background: #ffb55a;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
@@ -443,6 +456,10 @@ header {
   font-size: 28px;
   line-height: 100%;
   color: #000000;
+  transition: background-color 0.3s 0.1s ease;
+}
+.button:hover {
+  background: #db9b4d ;
 }
 /* --- */
 .reviews {
@@ -578,6 +595,10 @@ footer {
 }
 .social-icons img {
   height: 32px;
+  transition: all 1s ease-out;
+}
+.social-icons img:hover {
+  transform: scale(2);
 }
 @media screen and (min-width: 540px) {
   .container {
@@ -599,11 +620,37 @@ footer {
   .container {
     max-width: 1460px;
   }
+  .about_me p {
+    font-size: 30px;
+  }
+  .about_me h2 {
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .about_me img {
+    display: block;
+  }
+  .portfolio .service {
+    font-weight: bold;
+    font-size: 60px;
+  }
   .portfolio_card {
     width: 460px;
   }
   .portfolio_cards {
     margin: -15px;
+  }
+  .headers {
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .procedure_title {
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .reviews_title {
+    font-weight: bold;
+    font-size: 60px;
   }
   .header_nav {
     display: flex;
@@ -666,8 +713,21 @@ footer {
   }
   .preview_info {
     height: 820px;
+    width: 670px;
     justify-content: center;
     align-items: flex-start;
+  }
+  .preview_info h1 {
+    font-size: 70px;
+  }
+  .preview_info div p {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding: 70px 0;
+  }
+  .preview_info button {
+
   }
   .advantages_item {
     width: 450px;
