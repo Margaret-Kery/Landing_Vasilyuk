@@ -73,7 +73,6 @@ const show = rewiewsMedia >= document.defaultView.innerWidth ? 1 : 3;
 const createReviewsBtn = (arr) => {
   return arr.reduce((acc, item, index) => {
     if (+index % +show == 0) {
-      console.log(+index / +show);
       return (
         acc +
         `<button class="reviews_btn__item" data-index=${
