@@ -89,7 +89,7 @@ const createPortfolio = (arr, show) => {
     .slice(0, show)
     .map(
       (item) => `
-    <li class="portfolio_card flexbox">
+    <li class="portfolio_card flexbox" data-modal="JS_MODAL__OPEN">
         <a href="${item.href}" class="link portfolio-link">
             <div class="portfolio_card__photo">
                 <img src="${item.img}" alt="Весільна фотосесія" width="463" height="320px">
