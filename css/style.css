@@ -159,7 +159,7 @@ header {
 }
 .modal label {
   width: 100px; /* Ширина */
-  text-align: right; /* Выравниваем по правому краю */
+  text-align: left; /* Выравниваем по правому краю */
   float: left; /* Выстраиваем элементы рядом */
   margin-right: 10px; /* Расстояние от текста до текстового поля */
   line-height: 30px; /* Выравниваем по высоте */
@@ -558,6 +558,34 @@ button::-moz-focus-outer,
 .button:hover {
   background: #db9b4d;
 }
+.price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.price_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 120%;
+  /* identical to box height, or 72px */
+
+  color: #000000;
+}
+.price_text span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 150%;
+  /* identical to box height, or 90px */
+
+  text-align: center;
+
+  color: #000000;
+}
 /* --- */
 .reviews {
   width: 100%;
@@ -881,14 +909,14 @@ footer {
     margin-left: 165px;
     top: 5%;
     bottom: 0%;
-  
+
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
     line-height: 120%;
     /* or 72px */
-  
+
     color: #000000;
   }
   .inpopname {
@@ -898,7 +926,7 @@ footer {
   }
   .inpopphone {
     position: absolute;
-  
+
     left: 15px;
     top: 288px;
   }
@@ -909,13 +937,13 @@ footer {
     margin-left: 50px;
     margin-right: 10px; /* Расстояние от текста до текстового поля */
     line-height: 30px; /* Выравниваем по высоте */
-  
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 200;
     font-size: 18px;
     line-height: 150%;
-  
+
     margin-top: 10px;
   }
   button::-moz-focus-outer,
@@ -935,18 +963,18 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 15px 40px;
-  
+
     position: absolute;
     width: 301px;
     height: 66px;
     left: auto;
     right: 33%;
     top: 415px;
-  
+
     background: #ffb55a;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px 0px;
-  
+
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: 500;
